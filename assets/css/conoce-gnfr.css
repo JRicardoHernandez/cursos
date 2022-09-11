@@ -19,28 +19,3 @@ video::cue {
     background-color: powderblue !important;
 }
 
-
-  @media only screen and (min-width: 768px) {
-    .col-container {
-        display: table; /* Make the container element behave like a table */
-        width: 100%; /* Set full-width to expand the whole page */
-      }
-      
-      .col {
-        display: table-cell; /* Make elements inside the container behave like table cells */
-      }
-
-      .container {
-          width: -webkit-fill-available !important;
-          max-width: -webkit-fill-available !important;
-      }
-
-  }
-
-
-  @media only screen and (min-width: 1440px) {
-    .lg-big {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-  }

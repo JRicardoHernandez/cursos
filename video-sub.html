@@ -1,88 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="assets\js\jQuery-3.6.1.js"></script>
+  <script src="assets/js/jQuery-3.6.1.js"></script>
   <script>
     $(function(){ $("head").load("headers.html") });
   </script>
 </head>
-<body class="fondo">
-    
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Inicio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="objetivo.html">Objetivo</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="video-sub.html">Video-Sub</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </nav>
 
+<body class="fondo" style="background-color: powderblue !important;">
+  
+    <div id="loadFile" style="height: 700px !important;width: 100% !important;display: block !important;">
+      <iframe src="plantilla/htmls/cargador.html" style="height: -webkit-fill-available;width: -webkit-fill-available;"></iframe>
+    </div>
+    <div id="contenido" style="display: none;">
+      <nav id="includedContent" class="navbar navbar-dark bg-dark fixed-top"></nav>
 
+      <div class="container mt-5 pt-5 m-3 p-3">
+        <div class="d-flex justify-content-center">
+          <div class="row justify-content-lg-center">
 
-    <div class="container mt-5 pt-5 m-3 p-3">
-      <div class="d-flex justify-content-center">
-        <div class="row justify-content-lg-center">
-
-          <div class="col col-12 col-sm-12 col-md-12 lg-big">
-            <div class="row w-100">
-              <div class="col col-12 col-sm-12 col-md-12">
-                  <video controls>
-                      <source src="assets/video/example.mp4" type="video/mp4">
-                      <track default kind="captions" src="assets/video/example.vtt" srclang="en">
-                      Sorry, your browser doesn't support embedded videos.
-                  </video>
-              </div>
-              <div class="col col-12 col-sm-12 col-md-12">
-                  <div class="row w-100 text-center col-container">
-                      <div class="col-12 col-sm-12 col-md-2 pt-1 p-4 col align-middle">
-                          <button type="button" class="btn btn-primary h-desc btn-sm w-100">
-                              <i class="fa-solid fa-circle-arrow-left"></i>
-                          </button>
-                      </div>
-                      <div class="col-12 col-sm-12 col-md-8 p-1 col">
-                          <div class="alert alert-warning w-100 d-inline-block" role="alert" style="background-color: orange;">
-                              <p class="text-start fw-semibold">
-                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
-                                  dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
-                                  specimen book.
-                              </p>
-                          </div>
-                      </div>
-                      <div class="col-12 col-sm-12 col-md-2 pt-1 p-4 col align-middle">
-                          <button type="button" class="btn btn-primary h-desc btn-sm w-100">
-                              <i class="fa-solid fa-circle-arrow-right"></i>
-                          </button>
-                      </div>
-                  </div>
+            <div class="col col-12 col-sm-12 col-md-12 lg-big">
+              <div class="row w-100">
+                <div class="col col-12 col-sm-12 col-md-12">
+                    <video controls>
+                        <source src="assets/video/example.mp4" type="video/mp4">
+                        <track default kind="captions" src="assets/video/example.vtt" srclang="en">
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12">
+                    <div class="row w-100 text-center col-container">
+                        <div class="col-12 col-sm-12 col-md-2 pt-1 p-4 col align-middle">
+                            <button type="button" class="btn btn-primary h-desc btn-sm w-100">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                            </button>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-8 p-1 col">
+                            <div class="alert alert-warning w-100 d-inline-block" role="alert" style="background-color: orange;">
+                                <p class="text-start fw-semibold">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+                                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+                                    specimen book.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-2 pt-1 p-4 col align-middle">
+                            <button type="button" class="btn btn-primary h-desc btn-sm w-100">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
     </div>
 
 </body>
 <script>
-    document.querySelector('title').textContent = "Conoce GNFR";
+  $(function(){
+      $("nav").load("nav-menu.html");
+      $('#video-a').attr('aria-current', 'page').addClass('active');
+  });
+  function loadHead() {
+      $('title').text("Video");
+  }
 </script>
 </html>

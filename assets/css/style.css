@@ -15,3 +15,82 @@
     margin-top: 0.7rem !important;
     margin-bottom: 0.7rem !important;
 }
+
+/* Conoce */
+.cabecera-top {
+    background-image: url(/assets/img/gnfr/caja-cabecera.png) !important;
+    background-size: cover !important;
+    border-radius: unset !important;
+    --background: transparent !important;
+    background-color: transparent !important;
+    --color: blue !important;
+    color: blue !important;
+    padding-right: 3rem !important;
+    padding-left: 2rem !important;
+}
+.caja-completa {
+    background-image: url(/assets/img/fondo-cajas.png) !important;
+    background-size: cover !important;
+    min-height: 600px !important;
+}
+.cabecera-middle {
+    border-radius: unset !important;
+    border: unset !important;
+    --color: #fff !important;
+    color: #fff !important;
+    padding-right: 3rem !important;
+    padding-left: 2rem !important;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .col-container {
+        display: table; /* Make the container element behave like a table */
+        width: 100%; /* Set full-width to expand the whole page */
+      }
+      
+      .col {
+        display: table-cell; /* Make elements inside the container behave like table cells */
+      }
+
+      .container {
+          width: -webkit-fill-available !important;
+          max-width: -webkit-fill-available !important;
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+        .hide-div {
+            display: none !important;
+        }
+        .show-div {
+            display: block !important;
+        }
+        .hide-mujer-logo {
+            display: none !important;
+        }
+        .mostrar-mujer-img {
+            display: block !important;
+        }
+        .mujer-img {
+            max-width: 200px !important;
+        }
+    }
+
+  @media only screen and (min-width: 1024px) {
+    .mujer-img {
+        max-width: 200px !important;
+        margin-top: -15rem !important;
+        margin-left: 2rem !important;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .lg-big {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .caja-completa {
+        min-width: 900px !important;
+    }
+  }

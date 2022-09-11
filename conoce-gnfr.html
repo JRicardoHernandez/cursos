@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="assets\js\jQuery-3.6.1.js"></script>
+  <script src="assets/js/jQuery-3.6.1.js"></script>
   <script>
     $(function(){ $("head").load("headers.html") });
   </script>
@@ -9,7 +9,7 @@
 
 <body class="fondo" style="background-color: powderblue !important;">
   
-  <div id="loadFile" style="height: 700px !important;width: 100% !important;">
+  <div id="loadFile" style="height: 700px !important;width: 100% !important;display: block !important;">
     <iframe src="plantilla/htmls/cargador.html" style="height: -webkit-fill-available;width: -webkit-fill-available;"></iframe>
   </div>
   <div id="contenido" style="display: none;">
@@ -17,14 +17,94 @@
     <div class="container mt-5 pt-5 m-3 p-3">
         <div class="d-flex justify-content-center">
           <div class="row justify-content-lg-center">
-            <div class="col col-12 col-sm-12 col-md-12 lg-big">
-  
-              <div class="row w-100">
-                <div class="col col-12 col-sm-12 col-md-12">
-                  ksjd
+            <div class="col col-12 col-sm-12 col-md-12 lg-big caja-completa">
+
+              <div class="row w-100" style="width: -webkit-fill-available !important;">
+                <div class="col col-12 col-sm-12 col-md-4 p-0 pt-4">
+                    <span class="badge text-bg-info p-2 pr-5 pl-5 text-light cabecera-top position-relative">
+                        <p class="fs-4">Conoce a GNFR</p>
+                        <div class="position-absolute top-0 start-100 translate-middle">
+                            <img src="assets/img/gnfr/iconoWallmart.png" class="img-fluid rounded-start" alt="logo" style="max-width: 40px;">
+                        </div>
+                    </span>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-8">
+                    <div class="row w-100 text-center col-container show-div mt-3" style="width: -webkit-fill-available !important;display: none;">
+                        <div class="col col-12 col-sm-12 col-md-12 p-3">
+                            <img src="assets/img/gnfr/folder-amarillo.png" class="img-fluid rounded" alt="folder" style="max-width: 60px;">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 p-3">
+                            <div class="alert alert-info text-start" role="alert">
+                                <p>Da clic en el botón de descarga para conocer más sobre GNFR</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row w-100 text-center col-container hide-div" style="width: -webkit-fill-available !important;">
+                        <div class="col-12 col-sm-12 col-md-12 pt-5 p-3 col align-middle">
+                            <div class="d-flex align-items-center p-3">
+                                <div class="flex-shrink-0 p-3" style="border-radius: 100%;border: 3px dotted yellow;">
+                                    <img src="assets/img/gnfr/folder-amarillo.png" class="img-fluid rounded" alt="folder" style="max-width: 60px;">
+                                </div>
+                                <div class="flex-grow-1 ms-3 p-0 fs-5" style="margin-right: 3rem;">
+                                    <div class="alert alert-info text-start" role="alert">
+                                        <p>Da clic en el botón de descarga para conocer más sobre GNFR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="row w-100" style="width: -webkit-fill-available !important;">
+                <div class="col col-12 col-sm-12 col-md-7 p-0 pt-4 mostrar-mujer-img text-center" style="display: none;">
+                    <img src="assets/img/gnfr/mujer-imagen.png" class="img-fluid rounded-start mujer-img" alt="logo">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-7 p-0 pt-4">
+                    <span class="badge text-bg-info p-2 pr-5 pl-5 text-light cabecera-middle position-relative alert alert-info mb-0">
+                        <p class="fs-1">GNFR</p>
+                        <p class="fs-6">Center of Expertise</p>
+                        <div class="position-absolute top-50 start-100 translate-middle">
+                            <img src="assets/img/gnfr/iconoWallmart.png" class="img-fluid rounded-start" alt="logo" style="max-width: 40px;">
+                        </div>
+                    </span>
+                    <div class="alert alert-info text-bg-info text-light position-relative text-start" role="alert" style="margin-top: -10px !important;border: unset !important;">
+                        <div class="position-absolute top-50 start-50 translate-middle hide-mujer-logo">
+                            <img src="assets/img/gnfr/mujer-imagen.png" class="img-fluid rounded-start mujer-img" alt="logo">
+                        </div>
+                        <p>Es el &aacute;rea encargada de gestionar los procesos de sourcing para la compra/adquisici&oacute;n de bienes y servicios para la compañia.</p>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-5">
+                    <div class="row w-100 text-center col-container" style="width: -webkit-fill-available !important;">
+                        <div class="col-12 col-sm-12 col-md-12 pt-5 p-3 col align-middle">
+                            <div class="d-flex align-items-center p-3">
+                                <div class="flex-grow-1 ms-3 p-0 fs-5" style="margin-right: 3rem;">
+                                    <div class="alert alert-info text-start role="alert">
+                                        <p>Es ser un &aacute;rea enfocada en proveer bienes y servicios de manera oportuna al mejor costo y calidad, para constribuir
+                                            la experiencia de los clientes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12">
-                  jkdfnhd
+                    <div class="row w-100 text-center col-container">
+                        <div class="col-12 col-sm-12 col-md-2 pt-1 p-4 col align-middle">
+                            <button type="button" class="btn btn-primary h-desc btn-sm w-100">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                            </button>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-8 p-1 col">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-2 pt-1 p-4 col align-middle">
+                            <button type="button" class="btn btn-primary h-desc btn-sm w-100">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
               </div>
   
