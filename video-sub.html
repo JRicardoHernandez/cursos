@@ -17,11 +17,11 @@
 
       <div class="container mt-5 pt-5 m-3 p-3">
         <div class="d-flex justify-content-center">
-          <div class="row justify-content-lg-center">
+          <div class="row justify-content-lg-center" style="width: -webkit-fill-available !important;">
 
             <div class="col col-12 col-sm-12 col-md-12 lg-big">
               <div class="row w-100">
-                <div class="col col-12 col-sm-12 col-md-12">
+                <div id="video" class="col col-12 col-sm-12 col-md-12">
                     <video controls>
                         <source src="assets/video/example.mp4" type="video/mp4">
                         <track default kind="captions" src="assets/video/example.vtt" srclang="en">
@@ -37,10 +37,8 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-8 p-1 col">
                             <div class="alert alert-warning w-100 d-inline-block" role="alert" style="background-color: orange;">
-                                <p class="text-start fw-semibold">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
-                                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
-                                    specimen book.
+                                <p id="text-sub" class="text-start fw-semibold">
+                                    Los subtitulos aparecer&aacute;n aqui!!
                                 </p>
                             </div>
                         </div>
@@ -68,5 +66,29 @@
   function loadHead() {
       $('title').text("Video");
   }
+  
+  (function(){
+    var video = document.querySelector('div#video video');
+    // var span1 = document.querySelector('div#video > div');
+    var span1 = document.getElementById('text-sub');
+    if (!video.textTracks) return;
+
+    var track = video.textTracks[0];
+    track.mode = 'hidden';
+    var idx = 0;
+
+    track.oncuechange = function(e) {
+      var cue = this.activeCues[0];
+      if (cue) {
+        if (idx >= 0) {
+          span1.classList.remove('on');
+          span1.innerHTML = '';
+          span1.appendChild(cue.getCueAsHTML());
+          span1.classList.add('on');
+        }
+        idx = ++idx % 2;
+      }
+    };
+  })();
 </script>
 </html>
