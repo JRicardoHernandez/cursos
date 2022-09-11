@@ -14,7 +14,7 @@
   </div>
   <div id="contenido" style="display: none;">
     <nav id="includedContent" class="navbar navbar-dark bg-dark fixed-top"></nav>
-    <div class="container mt-5 pt-5 m-3 p-3">
+    <div class="container mt-5 pt-5 m-3 p-3" style="max-width: -webkit-fill-available !important;max-width: -webkit-fill-available;">
         <div class="d-flex justify-content-center">
           <div class="row justify-content-lg-center">
             <div class="col col-12 col-sm-12 col-md-12 lg-big caja-completa">
@@ -31,7 +31,11 @@
                 <div class="col col-12 col-sm-12 col-md-8">
                     <div class="row w-100 text-center col-container show-div mt-3" style="width: -webkit-fill-available !important;display: none;">
                         <div class="col col-12 col-sm-12 col-md-12 p-3">
-                            <img src="assets/img/gnfr/folder-amarillo.png" class="img-fluid rounded" alt="folder" style="max-width: 60px;">
+                            <div class="d-flex align-items-center p-3">
+                                <div class="flex-shrink-0 p-3" style="border-radius: 100%;border: 3px dotted yellow;">
+                                    <img src="assets/img/gnfr/folder-amarillo.png" class="img-fluid rounded" alt="folder" style="max-width: 60px;">
+                                </div>
+                            </div>
                         </div>
                         <div class="col col-12 col-sm-12 col-md-12 p-3">
                             <div class="alert alert-info text-start" role="alert">
@@ -62,16 +66,17 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-7 p-0 pt-4">
                     <span class="badge text-bg-info p-2 pr-5 pl-5 text-light cabecera-middle position-relative alert alert-info mb-0">
-                        <p class="fs-1">GNFR</p>
+                        <p class="fs-1 mb-0">GNFR</p>
                         <p class="fs-6">Center of Expertise</p>
-                        <div class="position-absolute top-50 start-100 translate-middle">
+                        <div class="position-absolute top-50 start-100 translate-middle img-top-info">
                             <img src="assets/img/gnfr/iconoWallmart.png" class="img-fluid rounded-start" alt="logo" style="max-width: 40px;">
+                            <img src="assets/img/gnfr/mujer-imagen.png" class="img-fluid rounded-start hide-mujer-logo" alt="logo" style="max-width: 150px;margin-bottom: 3rem !important;">
                         </div>
                     </span>
                     <div class="alert alert-info text-bg-info text-light position-relative text-start" role="alert" style="margin-top: -10px !important;border: unset !important;">
-                        <div class="position-absolute top-50 start-50 translate-middle hide-mujer-logo">
+                        <!-- <div class="position-absolute top-50 start-50 translate-middle hide-mujer-logo">
                             <img src="assets/img/gnfr/mujer-imagen.png" class="img-fluid rounded-start mujer-img" alt="logo">
-                        </div>
+                        </div> -->
                         <p>Es el &aacute;rea encargada de gestionar los procesos de sourcing para la compra/adquisici&oacute;n de bienes y servicios para la compañia.</p>
                     </div>
                 </div>
