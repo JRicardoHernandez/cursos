@@ -1,0 +1,101 @@
+
+body{
+    padding: 30px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+}
+
+.config-container{
+    padding: 15%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: #D3EFF8;
+    border-radius: 15px;
+}
+
+
+.btn-sig{
+    width: 20%;
+    height: 55px;
+    border-radius: 50px;
+    border: 2px solid #0071DC;
+    padding: 10px 20px;
+    background: white;
+    color: #0071DC;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-config{
+    width: 24%;
+    height: 55px;
+    border-radius: 15px;
+    border: 2px solid #0071DC;
+    padding: 10px 20px;
+    background: white;
+    color: #041E42;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-config:focus{
+    border-radius: 15px;
+    border: white;
+    padding: 10px 20px;
+    background: #041E42;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.help-container{
+    width: 105%;
+    height: 500px;
+    border-radius: 15px;
+    border: 2px solid #0071DC;
+    padding: 40px 40px;
+    background: white;
+}
+
+.help-text{
+    margin-top: 25px;
+    text-align: start;
+    width: 100%;
+    padding: 15px;
+    background-color: #FFC220;
+    border-radius: 20px;
+}
+
+.config-image{
+    width: 42.3%;
+}
+
+.puntito1{
+    margin: 10px;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #0071DC;
+    border-radius: 50%;
+}
+.puntito2{
+    margin: 10px;
+    border: 1px solid #0071DC;
+    background-color: #0071DC;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+
+}
+.puntito3{
+    margin: 10px;
+    border: 1px solid #0071DC;
+    background-color: #0071DC;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+
+}

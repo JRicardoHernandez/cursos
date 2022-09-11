@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="assets\js\jQuery-3.6.1.js"></script>
+  <script>
+    $(function(){ $("head").load("headers.html") });
+  </script>
+</head>
+
+<body class="fondo" style="background-color: powderblue !important;">
+  
+  <div id="loadFile" style="height: 700px !important;width: 100% !important;display: block;">
+    <iframe src="plantilla/htmls/cargador.html" style="height: -webkit-fill-available;width: -webkit-fill-available;"></iframe>
+  </div>
+  <div id="contenido" style="display: none;">
+    <nav id="includedContent" class="navbar navbar-dark bg-dark fixed-top"></nav>
+    <div class="container mt-5 pt-5 m-3 p-3">
+        <div class="d-flex justify-content-center">
+          <div class="row justify-content-lg-center">
+            <div class="col col-12 col-sm-12 col-md-12 lg-big">
+  
+                <div class="row w-100">
+                    <div class="col p-3 col-12 col-sm-12 col-md-12">
+                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                    </div>
+                </div>
+                <div class="row w-100">
+                    <div class="col p-3 col-12 col-sm-12 col-md-12 opciones" style="border: 2px dotted blue;">
+                        <span draggable="true" class="badge opcion text-bg-light border border-primary p-3 fs-6 text-primary fw-bold">
+                            Lorem Ipsum dolor.
+                        </span>
+                        <span draggable="true" class="badge opcion text-bg-light border border-primary p-3 fs-6 text-primary fw-bold">
+                            Lorem Ipsum dolor.
+                        </span>
+                        <span draggable="true" class="badge opcion text-bg-light border border-primary p-3 fs-6 text-primary fw-bold">
+                            Lorem Ipsum dolor.
+                        </span>
+                        <span draggable="true" class="badge opcion text-bg-light border border-primary p-3 fs-6 text-primary fw-bold">
+                            Lorem Ipsum dolor.
+                        </span>
+                        <span draggable="true" class="badge opcion text-bg-light border border-primary p-3 fs-6 text-primary fw-bold">
+                            Lorem Ipsum dolor.
+                        </span>
+                        <span draggable="true" class="badge opcion text-bg-light border border-primary p-3 fs-6 text-primary fw-bold">
+                            Lorem Ipsum dolor.
+                        </span>
+                        <span draggable="true" class="badge opcion text-bg-light border border-primary p-3 fs-6 text-primary fw-bold">
+                            Lorem Ipsum dolor.
+                        </span>
+                        <span draggable="true" class="badge opcion text-bg-light border border-primary p-3 fs-6 text-primary fw-bold">
+                            Lorem Ipsum dolor.
+                        </span>
+                    </div>
+                </div>
+                <div class="row w-100">
+                    <div class="col p-3 col-12 col-sm-12 col-md-12">
+                        <div class="card">
+                            <h5 class="card-header bg-primary text-light">Lorem Ipsum dolor it.</h5>
+                            <div class="card-body bg-warning border-start border-bottom border-end border-primary opciones" style="border-width: 3px !important;">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-3 col-12 col-sm-12 col-md-12">
+                        <div class="card">
+                            <h5 class="card-header bg-primary text-light">Lorem Ipsum dolor it.</h5>
+                            <div class="card-body bg-warning border-start border-bottom border-end border-primary opciones" style="border-width: 3px !important;">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+</body>
+<script>
+    $(function(){
+        $("nav").load("nav-menu.html");
+        $('#drag-drop-a').attr('aria-current', 'page').addClass('active');
+    });
+    function loadHead() {
+        $('title').text("Drag and Drop");
+        contenido();
+    }
+
+    function contenido() {
+        
+        // var opcion = $(".opcion");
+        var opcion = document.getElementsByTagName('span');
+        var opciones = document.getElementsByClassName("opciones");
+        var dragItem = null;
+
+        for(var i of opcion) {
+            i.addEventListener('dragstart', dragStart);
+            i.addEventListener('dragend', dragEnd);
+        }
+        function dragStart() {
+            dragItem = this;
+        }
+        function dragEnd() {
+            dragItem = null;
+        }
+        for (var j of opciones) {
+            j.addEventListener('dragover', dragOver);
+            j.addEventListener('dragenter', dragEnter);
+            j.addEventListener('drop', Drop);
+        }
+        function Drop() {
+            this.append(dragItem);
+        }
+        function dragOver(e) {
+            e.preventDefault();
+        }
+        function dragEnter(e) {
+            e.preventDefault();
+        }
+
+    }
+
+
+</script>
+</html>
+

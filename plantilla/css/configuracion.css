@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+
+
+body{
+    padding: 30px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+}
+
+.config-container{
+    padding: 15%;
+    padding-top: 6%;
+    padding-bottom: 4%;
+    background-color: #D3EFF8;
+    border-radius: 15px;
+}
+
+.btn-config{
+    width: 24%;
+    height: 55px;
+    border-radius: 15px;
+    border: 2px solid #0071DC;
+    padding: 10px 20px;
+    background: white;
+    color: #041E42;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-config:focus{
+    border-radius: 15px;
+    border: white;
+    padding: 10px 20px;
+    background: #041E42;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.image{
+    position: relative;
+    text-align: center;
+}
+
+.config-text{
+    position: absolute;
+    text-align: start;
+    top: 60%;
+    left: 8%;
+    width: 35%;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: #FFC220;
+    border-radius: 20px;
+}
+
+.config-volume{
+    position: absolute;
+    text-align: start;
+    top: 30%;
+    left: 8%;
+    width: 35%;
+}
+
+#volume-slider{
+    position: absolute;
+    text-align: start;
+    top: 37%;
+    left: 8%;
+    width: 35%;
+}
+
+#valBox{
+    position: absolute;
+    text-align: start;
+    top: 36%;
+    left: 45%;
+    width: 35%;
+}
+
+/*#player {*/
+/*    width: 350px;*/
+/*    height: 50px;*/
+/*    position: relative;*/
+/*    margin: 0 auto;*/
+/*    top: 80px;*/
+/*}*/
+/*i {*/
+/*    position: absolute;*/
+/*    margin-top: -6px;*/
+/*    color: #666;*/
+/*}*/
+
+/*i.fa-volume-down {*/
+/*    margin-left: -8px;*/
+/*}*/
+
+/*i.fa-volume-up {*/
+/*    margin-right: -8px;*/
+/*    right: 0;*/
+/*}*/
+
+
+/*#volume {*/
+/*    position: absolute;*/
+/*    left: 24px;*/
+/*    margin: 0 auto;*/
+/*    height: 5px;*/
+/*    width: 300px;*/
+/*    background: #555;*/
+/*    border-radius: 15px;*/
+/*}*/
+/*.ui-slider-range-min {*/
+/*    height: 5px;*/
+/*    width: 300px;*/
+/*    position: absolute;*/
+/*    background: #2ecc71;*/
+/*    border: none;*/
+/*    border-radius: 10px;*/
+/*    outline: none;*/
+/*}*/
+
+/*.ui-slider-handle {*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    border-radius: 20px;*/
+/*    background: #FFF;*/
+/*    position: absolute;*/
+/*    margin-left: -8px;*/
+/*    margin-top: -8px;*/
+/*    cursor: pointer;*/
+/*    outline: none;*/
+/*    }*/
+
+
+.config-image{
+    position: absolute;
+    width: 25%;
+    top: 22%;
+    left: 66%;
+}

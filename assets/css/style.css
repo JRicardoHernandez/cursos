@@ -1,0 +1,17 @@
+.fondo {
+    background-color: powderblue !important;
+}
+
+.opciones {
+    height: 150px;
+    min-height: 150px;
+    height: 100%;
+}
+
+.opcion {
+    border-width: 2px !important;
+    margin-right: 0.7rem !important;
+    margin-left: 0.7rem !important;
+    margin-top: 0.7rem !important;
+    margin-bottom: 0.7rem !important;
+}

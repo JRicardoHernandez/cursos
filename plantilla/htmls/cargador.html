@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"/> 
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1"/>
+        <title></title>                 
+        <style>
+            *{user-select: none;pointer-events: none;}
+            *::-webkit-scrollbar {	-webkit-appearance: none;}
+            *::-webkit-scrollbar:vertical {	width: 6px;}
+            *::-webkit-scrollbar-button:increment,*::-webkit-scrollbar-button {	display: none;}
+            *::-webkit-scrollbar:horizontal {height: 6px;}
+            *::-webkit-scrollbar-thumb {background-color: #c4c4c4;	border-radius: 6px;}
+            *::-webkit-scrollbar-track {border-radius: 6px;}
+            body{margin:0;padding:0;}
+            .cargador{transform:translate(0px, 30vh);display: flex;flex-direction: row;align-content: center;justify-content: center;}
+            .forma { display: block; width: 230px; height: 260px; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; position: absolute; animation-iteration-count: infinite; animation-timing-function: linear; } 
+            .color1 { background-color: rgba(247, 80, 193, 0.8); animation-delay: 0s; animation-duration: 1s; animation-name: spin;} 
+            .color2 { background-color: rgba(253, 244, 123, 0.8); animation-delay: 0s; animation-duration: 1.2s; animation-name: spin2;} 
+            .color3 { background-color: rgba(148, 199, 255, 0.8); animation-delay: 0s; animation-duration: 1.6s; animation-name: spin;} 
+            .color4 { background-color: rgba(140, 86, 230, 0.8); animation-delay: 0s; animation-duration: 1.8s; animation-name: spin2;} 
+            .textocarga{ transform: translate(0px, 110px);width:130px; color: white;font-size:x-large;z-index: 10;font-weight: bold;font-family: Arial, Helvetica, sans-serif;text-align: center; }
+            @keyframes spin { from {  transform: rotate(0deg); }  to {  transform: rotate(360deg); } }
+            @keyframes spin2 { from {  transform: rotate(360deg); }  to {  transform: rotate(0deg); } }
+        </style>         
+    </head>     
+    <body> 
+        <div class="cargador">
+            <div class="forma color1"></div>
+            <div class="forma color2"></div>
+            <div class="forma color3"></div>             
+            <div class="forma color4"></div>
+            <div class="textocarga">Cargando...</div>
+        </div>         
+    </body>     
+</html>

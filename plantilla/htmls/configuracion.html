@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/configuracion.css"/>
+    <script defer src="../menuJs/configuracion.js"></script>
+    <script defer src="../menuJs/menu.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+	
+	
+	
+	    <video id="video1" controls style="object-fit: contain; width: 90%; height: 80%;">
+                <source src="./1.mp4" type="video/mp4"/>
+                <track default src="./1.vtt" kind="subtitles" srclang="es" label="Español"/>
+            </video>
+	
+	
+	
+<div class=" config-container">
+    <div modo="0" class="menuBotones" style="position: fixed; top: 0vh; right: 0;  height: 80vh;">
+        <img id="menuImage" src="../../assets/img/menu/menu_opciones.png" style="position: relative; height: 86vh; display: flex; align-self: center;"/>
+        <div m="1" class="itmMenuBotones" style="position: absolute; top: 50px; right: 30px; width: 70px; height: 100px; overflow: hidden; cursor: pointer;"></div>
+        <div m="2" class="itmMenuBotones" style="position: absolute; top: 190px; right: 30px;width: 70px; height: 60px; overflow: hidden; cursor: pointer;"></div>
+        <div m="3" class="itmMenuBotones" style="position: absolute; top: 310px; right: 30px; width: 70px; height: 50px; overflow: hidden; cursor: pointer;"></div>
+        <div m="4" class="itmMenuBotones" style="position: absolute; top: 415px; right: 30px;width: 70px; height: 60px; overflow: hidden; cursor: pointer;"></div>
+        <div m="5" class="itmMenuBotones" style="position: absolute; top: 530px; right: 30px;width: 70px; height: 60px; overflow: hidden; cursor: pointer;"></div>
+    </div>
+    <h2 class="mb-5 page-section-heading text-left text-uppercase text-secondary ">Lorem Ipsum Dolor sit</h2>
+    <!-- Portfolio Grid Items-->
+    <div class="row justify-content-between mb-4 ml-0">
+        <button class="btn btn-config" type="submit">Lorem ipsum dolor.</button>
+        <button class="btn btn-config" type="submit">Lorem ipsum dolor.</button>
+        <button class="btn btn-config" type="submit">Lorem ipsum dolor.</button>
+        <button class="btn btn-config" type="submit">Lorem ipsum dolor.</button>
+    </div>
+    <div class="row justify-content-between mb-5 ml-0">
+        <button class="btn btn-config" type="submit">Lorem ipsum dolor.</button>
+        <button class="btn btn-config" type="submit">Lorem ipsum dolor.</button>
+        <button class="btn btn-config" type="submit">Lorem ipsum dolor.</button>
+        <button class="btn btn-config" type="submit">Lorem ipsum dolor.</button>
+    </div>
+    <div class="image">
+        <img src="..\..\assets\img\settings\FONDOS\fondo_opciones.png" style="position: relative; width: 102%; display: flex; align-self: center;"/>
+        <div class="config-volume">Lorem Ipsum Dolor sit amet</div>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.1" oninput="showVal(this.value)" onchange="showVal(this.value)">
+        <span id="valBox">Loading...</span>
+
+        <div class="config-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</div>
+        <img class="config-image" src="..\..\assets\img\settings\ICONOS\icono_volumen.png"/>
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	
+	<script src="../js/global.js"></script>
+</body>
+</html>

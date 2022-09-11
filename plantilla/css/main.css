@@ -1,0 +1,270 @@
+*::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+*::-webkit-scrollbar:vertical {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-button:increment,
+*::-webkit-scrollbar-button {
+    display: none;
+}
+
+*::-webkit-scrollbar:horizontal {
+    height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4;
+    border-radius: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 6px;
+}
+
+@font-face {
+    font-family: BogleThin;
+    src: url(../../assets/font/Bogle-Thin.otf);
+}
+
+@font-face {
+    font-family: BogleLight;
+    src: url(../../assets/font/Bogle-Light.otf);
+}
+
+@font-face {
+    font-family: BogleMedium;
+    src: url(../../assets/font/Bogle-Medium.otf);
+}
+
+@font-face {
+    font-family: Bogle;
+    src: url(../../assets/font/Bogle-Regular.otf);
+}
+
+@font-face {
+    font-family: BogleBold;
+    src: url(../../assets/font/Bogle-Bold.otf);
+}
+
+@font-face {
+    font-family: BogleBlack;
+    src: url(../../assets/font/Bogle-Black.otf);
+}
+
+* {
+    font-family: Bogle;
+}
+
+b,
+strong {
+    font-family: BogleBold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.cargador {
+    width: 100%;
+    height: 99.5%;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    position: fixed;
+}
+
+.cargador iframe {
+    width: 100%;
+    height: 99.5%;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+
+.visor {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    display: none;
+    position: fixed;
+}
+
+.visor iframe {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+
+.siguiente {
+    display: none;
+}
+
+.atras {
+    display: none;
+}
+
+.precargas {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    display: none;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.precargas iframe {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+
+.menuTrak {
+    display: none;
+}
+
+.menuBotones {
+    display: none;
+}
+
+.menuTrakItems {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.menuTrakItem {
+    color: white;
+    padding: 10px 40px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+.menuTrakItem .estado::before {
+    content: "•";
+    display: inline;
+    font-size: 30px;
+}
+
+.menuTrakItem .estado {
+    display: inline;
+}
+
+.menuTrakItem .textoItem {
+    display: inline;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.menuTrakItem[tipo="p"] {
+    color: white;
+    background-color: #0271db;
+}
+
+.menuTrakItem[tipo="p"]:hover {
+    background-color: #3091ec;
+}
+
+.menuTrakItem[tipo="h"] {
+    color: #151515;
+    background-color: #f8e6a5;
+    display: none;
+}
+
+.menuTrakItem[tipo="h"]:hover {
+    background-color: #f8e6a5;
+}
+
+.menuTrakItem .icono {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.menuTrakItem .mas {
+    background-image: url(../img/mas.png);
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(90%) sepia(74%) saturate(2%) hue-rotate(289deg) brightness(103%) contrast(101%);
+}
+
+.menuTrakItem .menos {
+    background-image: url(../img/menos.png);
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(90%) sepia(74%) saturate(2%) hue-rotate(289deg) brightness(103%) contrast(101%);
+}
+
+.menuTrakItem.sel {
+    background-color: #041e42;
+}
+
+.estado {
+    color: #c4c4c4;
+}
+
+.siguiente[modo="0"] .recuadro {
+    filter: none;
+}
+
+.atras[modo="0"] .recuadro {
+    filter: none;
+}
+
+.menuBotones[modo="0"] .recuadro {
+    filter: none;
+}
+
+.menuBotones[modo="0"] .trazo {
+    filter: none;
+}
+
+.menuBotones[modo="0"] img {
+    filter: none;
+}
+
+.siguiente[modo="1"] .recuadro {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(67%) saturate(6529%) hue-rotate(198deg) brightness(100%) contrast(101%);
+}
+
+.atras[modo="1"] .recuadro {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(67%) saturate(6529%) hue-rotate(198deg) brightness(100%) contrast(101%);
+}
+
+.siguiente[modo="1"] img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(336deg) brightness(102%) contrast(103%);
+}
+
+.atras[modo="1"] img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(336deg) brightness(102%) contrast(103%);
+}
+
+.menuBotones[modo="1"] .recuadro {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(77%) saturate(3633%) hue-rotate(195deg) brightness(96%) contrast(104%);
+}
+
+.menuBotones[modo="1"] .trazo {
+    filter: none;
+}
+
+.menuBotones[modo="1"] img {
+    filter: brightness(0) saturate(100%) invert(90%) sepia(74%) saturate(2%) hue-rotate(289deg) brightness(103%) contrast(101%);
+}

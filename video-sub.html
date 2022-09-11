@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-
-    <link rel="stylesheet" href="assets/bootstrap-5.2.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/video-page.css">
-    <link rel="stylesheet" href="assets/fontawesome-free-6.2.0-web/css/all.min.css">
-
-    <script src="assets/bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
+  <script src="assets\js\jQuery-3.6.1.js"></script>
+  <script>
+    $(function(){ $("head").load("headers.html") });
+  </script>
 </head>
 <body class="fondo">
     
@@ -42,40 +36,53 @@
         </div>
     </nav>
 
+
+
     <div class="container mt-5 pt-5 m-3 p-3">
-        <div class="row w-100">
-            <div class="col-12 col-sm-12 col-md-12">
-                <video controls>
-                    <source src="assets/video/example.mp4" type="video/mp4">
-                    <track default kind="captions" src="assets/video/example.vtt" srclang="en">
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
+      <div class="d-flex justify-content-center">
+        <div class="row justify-content-lg-center">
+
+          <div class="col col-12 col-sm-12 col-md-12 lg-big">
+            <div class="row w-100">
+              <div class="col col-12 col-sm-12 col-md-12">
+                  <video controls>
+                      <source src="assets/video/example.mp4" type="video/mp4">
+                      <track default kind="captions" src="assets/video/example.vtt" srclang="en">
+                      Sorry, your browser doesn't support embedded videos.
+                  </video>
+              </div>
+              <div class="col col-12 col-sm-12 col-md-12">
+                  <div class="row w-100 text-center col-container">
+                      <div class="col-12 col-sm-12 col-md-2 pt-1 p-4 col align-middle">
+                          <button type="button" class="btn btn-primary h-desc btn-sm w-100">
+                              <i class="fa-solid fa-circle-arrow-left"></i>
+                          </button>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-8 p-1 col">
+                          <div class="alert alert-warning w-100 d-inline-block" role="alert" style="background-color: orange;">
+                              <p class="text-start fw-semibold">
+                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+                                  dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+                                  specimen book.
+                              </p>
+                          </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-2 pt-1 p-4 col align-middle">
+                          <button type="button" class="btn btn-primary h-desc btn-sm w-100">
+                              <i class="fa-solid fa-circle-arrow-right"></i>
+                          </button>
+                      </div>
+                  </div>
+              </div>
             </div>
-            <div class="col-12">
-                <div class="row w-100 text-center col-container">
-                    <div class="col-12 col-sm-12 col-md-2 pt-1 p-4 col align-middle">
-                        <button type="button" class="btn btn-primary h-desc btn-sm w-100">
-                            <i class="fa-solid fa-circle-arrow-left"></i>
-                        </button>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-8 p-1 col">
-                        <div class="alert alert-warning w-100 d-inline-block" role="alert" style="background-color: orange;">
-                            <p class="text-start fw-semibold">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
-                                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
-                                specimen book.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-2 pt-1 p-4 col align-middle">
-                        <button type="button" class="btn btn-primary h-desc btn-sm w-100">
-                            <i class="fa-solid fa-circle-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
+          </div>
+
         </div>
+      </div>
     </div>
 
 </body>
+<script>
+    document.querySelector('title').textContent = "Conoce GNFR";
+</script>
 </html>
