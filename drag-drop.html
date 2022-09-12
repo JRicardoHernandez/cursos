@@ -53,18 +53,18 @@
                     </div>
                 </div>
                 <div class="row w-100">
-                    <div class="col p-3 col-12 col-sm-12 col-md-12 opciones">
+                    <div class="col p-3 col-12 col-sm-12 col-md-12">
                         <div class="card">
                             <h5 class="card-header bg-primary text-light">Lorem Ipsum dolor it.</h5>
-                            <div class="card-body bg-warning border-start border-bottom border-end border-primary" style="border-width: 3px !important;">
+                            <div class="card-body bg-warning border-start border-bottom border-end border-primary opciones" style="border-width: 3px !important;">
                                 
                             </div>
                         </div>
                     </div>
-                    <div class="col p-3 col-12 col-sm-12 col-md-12 opciones">
+                    <div class="col p-3 col-12 col-sm-12 col-md-12">
                         <div class="card">
                             <h5 class="card-header bg-primary text-light">Lorem Ipsum dolor it.</h5>
-                            <div class="card-body bg-warning border-start border-bottom border-end border-primary" style="border-width: 3px !important;">
+                            <div class="card-body bg-warning border-start border-bottom border-end border-primary opciones" style="border-width: 3px !important;">
                                 
                             </div>
                         </div>
@@ -95,12 +95,14 @@
         var opcion = document.getElementsByTagName('span');
         var opciones = document.getElementsByClassName("opciones");
         var dragItem = null;
+        var endTarget = null;
 
         for(var i of opcion) {
             i.addEventListener('dragstart', dragStart);
             i.addEventListener('dragend', dragEnd);
             i.addEventListener('touchstart', touchStart);
             i.addEventListener('touchend', touchEnd);
+            i.addEventListener('touchcancel', touchCancel);
             i.addEventListener('touchmove', touchMove);
         }
         function dragStart() {
@@ -112,19 +114,35 @@
         function touchStart() {
             dragItem = this;
         }
+        function touchCancel() {
+            dragItem = null;
+            endTarget = null;
+        }
         function touchEnd(event) {
             event.preventDefault();
-            var endTarget = document.elementFromPoint(
-                event.changedTouches[0].pageX,
-                event.changedTouches[0].pageY
-            );
-            if (endTarget.classList.contains('opciones')) {
-                endTarget.append(dragItem);
+            // endTarget = document.elementFromPoint(
+            //     event.changedTouches[0].pageX,
+            //     event.changedTouches[0].pageY
+            // );
+            if (endTarget) {
+                    // console.log("LOG TARGET",endTarget, dragItem);
+                if (endTarget.classList.contains('opciones')) {
+                    // log("INSERT")
+                    // console.log("LOG TARGET",endTarget, dragItem);
+                    endTarget.append(dragItem);
+                }
             }
             dragItem = null;
+            endTarget = null;
         }
         function touchMove(e) {
             e.preventDefault();
+            endTarget = document.elementFromPoint(
+                e.touches[0].clientX,
+                e.touches[0].clientY
+                // e.changedTouches[0].pageX,
+                // e.changedTouches[0].pageY
+            );
         }
         for (var j of opciones) {
             j.addEventListener('dragover', dragOver);
